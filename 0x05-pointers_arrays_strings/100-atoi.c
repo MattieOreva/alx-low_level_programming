@@ -3,7 +3,7 @@
  * _atoi- convert a string to an integer.
  * @s: string input
  * Return: int number
- */
+ **/
 int _atoi(char *s)
 {
 	int number2 = 0, size = 0, negatives = 0, p = 1, j, start = 0, end;
