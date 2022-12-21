@@ -4,23 +4,19 @@
  * puts_half - prints half of a string
  * @str: string
  * Return: void
- */
+ *t i, j, max;
 
-void puts_half(char *str)
-{
-	int length = strlen(str);
-	int half = length / 2;
-
- if (length % 2 == 1)
+ i = 0;
+ while (str[i] != '\0')
  {
-	 half = (length - 1) / 2;
+ i++;
  }
-
- for (int i = half; i < length; i++)
+ max = i;
+ j = max / 2;
+ while (j <= max)
  {
-	 putchar(str[i]);
+ _putchar(str[j]);
+ j++;
  }
-
- putchar('\n');
-}
-
+ _putchar('\n');
+ }
